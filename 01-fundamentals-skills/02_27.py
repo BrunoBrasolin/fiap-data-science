@@ -142,3 +142,11 @@ import numpy as np
 
 # x = np.dot(aI, b)
 # print(x)
+
+a = np.array([[2, 3, -1], [1, -2, 4], [3, 1, 2]])
+b = np.array([5, -3, 7])
+
+aI = np.linalg.inv(a)
+
+x = np.dot(aI, b)
+print(f"x = {x[0]:.2f}, y = {x[1]:.2f}, z = {x[2]:.2f}")
